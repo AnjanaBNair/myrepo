@@ -1,4 +1,4 @@
-# Conversion of Temperature
+# Conversion of Temperature between Celsius and Fahrenheit
 import sys
 
 while True:
