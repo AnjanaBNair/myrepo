@@ -1,15 +1,16 @@
-# Conversion of Temperature between Celsius and Fahrenheit
+# Fahrenheit to Celsius Temperature Conversion
 import sys
 
-while True:
+while True:         # Main program loop
     print('Temperature Conversion')
     print('Celsius to Fahrenheit, Click C \n'
           'Fahrenheit to Celsius, Click F')
 
     userChoice = input()  # This input the user choice between C and F
 
+    # Celsius to Fahrenheit Conversion
     if userChoice == 'c' or userChoice == 'C':
-        while True:
+        while True:           # If users inputs a non numeric value for the conversion, they are returned here
             print('Please, input the value of the temperature you want to convert to Fahrenheit')
 
             try:
@@ -19,13 +20,15 @@ while True:
 
                 print('\033[0;31;40m' + str(celsius) + ' celsius is ' + str(celsiusToFah) + ' Fahrenheit' + '\033[0;0m')
                 break
-            except ValueError:
+            except ValueError:          # This checks if the inputed a non numeric value
                 print('\033[0;31;40m' + 'Please, input a numeric value.' + '\033[0;0m')
                 continue
-
+ 
+    # Fahrenheit to Celsius Conversion
     elif userChoice == 'f' or userChoice == 'F':
         print('Please, input the value of the temperature you want to convert to Celsius')
-        while True:
+        
+        while True:         # If users inputs a non numeric value for the conversion, they are returned here
             try:
                 fahrenheit = float(input())
 
@@ -33,22 +36,22 @@ while True:
 
                 print('\033[0;31;40m' + str(fahrenheit) + ' Fahrenheit is ' + str(fahToCelsius) + ' Celsius' + '\033[0;0m')
                 break
-            except ValueError:
+            except ValueError:           # This checks if the inputed a non numeric value
                 print('Please, input a numeric value.')
                 continue
 
-            # If the user input a non numeric value, the user is taken back to the beginning
-            # This needs a solution
-
-    else:
+    else:         # If the the user input any other letter aside 'F' or 'C', the program returns to the beginning
         print('Please, input the either F or C')
         continue
-
+    
+    # This asks the users if they want to perform another calculation
     print('Do you wish to do another conversion? (Y)es or (N)o.')
     repeatChoice = input()
 
-    if repeatChoice == 'y' or repeatChoice == 'Y':
+    # The start the program for another conversion
+    if repeatChoice == 'y' or repeatChoice == 'Y':          
         continue
-
+  
+    # This exits the program
     elif repeatChoice != 'y' or repeatChoice != 'Y':
         sys.exit()
