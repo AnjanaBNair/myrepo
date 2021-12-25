@@ -23,10 +23,6 @@ while True:
                 print('\033[0;31;40m' + 'Please, input a numeric value.' + '\033[0;0m')
                 continue
 
-            # If the user input a non numeric value, the user is taken back to the beginning
-            # This needs a solution
-            # How to return to the beginning of an if function
-
     elif userChoice == 'f' or userChoice == 'F':
         print('Please, input the value of the temperature you want to convert to Celsius')
         while True:
