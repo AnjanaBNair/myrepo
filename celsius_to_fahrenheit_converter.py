@@ -1,4 +1,4 @@
-# Fahrenheit to Celsius Temperature Conversion
+# celsius_to_fahrenheit_converter.py - Converts Celsius to Fahrenheit and vice versa.
 import sys
 
 while True:         # Main program loop
