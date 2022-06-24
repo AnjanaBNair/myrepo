@@ -1,12 +1,5 @@
 # Timed Mental Maths
 
-"""
-Test your maths skill. Do not use a calculator.
-If you pass the second stage (i.e., when your score is between 1500 and 4000), you must be good.
-
-Created by Favour T. Olumese
-"""
-
 import random           # For randint
 import pickle           # For storing the high score
 import time
