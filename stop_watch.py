@@ -44,7 +44,7 @@ def stopwatch():
 
 try:
     # Display the program's instruction
-    print('Press ENTER to begin. Afterward, press ENTER to "click" th stopwatch. Press Ctrl + C to quit.')
+    print('Press ENTER to begin. Afterward, press ENTER to "click" the stopwatch. Press Ctrl + C to quit.')
     input()  # Press Enter to begin.
     print('Started')
 
